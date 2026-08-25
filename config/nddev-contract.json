@@ -1,7 +1,7 @@
 {
   "contract_version": 3,
   "product_name": "nddev-kilo-cli-app",
-  "github_repository": "NDDev-it-com/nddev-kilo-cli-app",
+  "github_repository": "rldyourmnd/nddev-kilo-cli-app",
   "license": "AGPL-3.0-or-later",
   "runtime_compatibility": {
     "current_version": "7.4.20",
