@@ -101,3 +101,11 @@ backup layout, ownership checks, removal behavior, and migration rules are
 owned by `cli-tools/nddev_kilo_cli.py`, `setups/nddev-builder/setup.json`, and
 `config/nddev-contract.json`; use `plan --json` and `status --json` for the
 current machine-readable view.
+
+## Source maintenance
+
+Run `just check` or `just verify` for the complete existing static public
+validator and command formatting while product work remains paused. The
+validator reads stored version/profile/package-integrity metadata, parses the
+manager's AST and checks public source paths. It does not load or execute the
+manager, install Kilo, contact a provider or inspect live target state.
