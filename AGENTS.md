@@ -2,10 +2,13 @@
 
 ## Development status: ON PAUSE
 
-Do not begin feature work, vendor updates, refactoring, releases, issue/PR
-implementation, or repository workflow dispatches here. Resume module-specific
-work only when the owner explicitly names this repository and directs its
-reactivation. Read-only integrity inspection remains allowed.
+Product work remains paused: feature work, vendor updates, refactoring,
+releases and runtime/operator workflow dispatches require the owner to name
+this repository and direct its reactivation.
+
+Read-only integrity inspection and source CI maintenance continue during the
+pause. They validate stored public contracts without installing, launching or
+operating Kilo CLI or reading live authentication state.
 
 - Treat this clone as one independent Git mutation boundary.
 - Preserve unrelated branches, worktrees, submodules, and dirty changes.
@@ -15,4 +18,5 @@ reactivation. Read-only integrity inspection remains allowed.
 
 ## Verification
 
-- Test: `python3 -m json.tool config/nddev-contract.json`.
+- Source checks: `just check` or `just verify`; both run the complete static
+  public-contract validator and command formatting without network access.

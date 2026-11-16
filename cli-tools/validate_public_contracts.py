@@ -13,15 +13,6 @@ from pathlib import Path
 from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
-WORKFLOWS = {
-    "actionlint.yml",
-    "codeql.yml",
-    "dependency-review.yml",
-    "release.yml",
-    "scorecard.yml",
-    "secret-scan.yml",
-    "zizmor.yml",
-}
 REQUIRED_MANAGER_FUNCTIONS = {
     "parse_args",
     "run_verified_archive_install",
@@ -33,7 +24,6 @@ REQUIRED_MANAGER_FUNCTIONS = {
     "launch_environment",
 }
 PRIVATE_PARTS = {"validation", ".agents", ".serena", "__pycache__", ".pytest_cache"}
-SHARED_WORKFLOW_PIN = "2ccb80e96f5771b6a6b4eae63a4f47e232906dc7"
 RELEASE_ARCHIVE_ROOTS = {
     ".claude",
     ".gds",
